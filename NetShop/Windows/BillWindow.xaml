@@ -1,0 +1,19 @@
+﻿<Window x:Class="NetShop.BillWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NetShop"
+        mc:Ignorable="d"
+        Title="Bill" Height="650" Width="400"
+        Loaded="Window_Loaded">
+    <Grid>
+        <TextBlock FontSize="22" HorizontalAlignment="Center" Text="Чек:" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" Height="40" Margin="0,10,0,0"/>
+        <DataGrid x:Name="dgOrders" Margin="10,193,10,57"/>
+        <TextBlock x:Name="tbDate" FontSize="18" HorizontalAlignment="Center" Text="Дата создания чека: " TextWrapping="Wrap" VerticalAlignment="Top" Width="380" Height="51" Margin="0,55,0,0"/>
+        <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" FontSize="22" Content="Нужна доставка?" HorizontalAlignment="Center" Margin="0,111,0,0" VerticalAlignment="Top" Height="42" Width="380"/>
+        <TextBlock FontSize="22" HorizontalAlignment="Center" Text="Заказанные товары: " TextWrapping="Wrap" VerticalAlignment="Top" Width="380" Height="35" Margin="0,153,0,0"/>
+        <Button Click="Button_Click" FontSize="22" Content="Покупка" HorizontalAlignment="Center" Margin="0,532,0,0" VerticalAlignment="Top" Height="42" Width="380"/>
+
+    </Grid>
+</Window>
